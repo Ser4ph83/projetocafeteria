@@ -82,3 +82,61 @@ header ul {
         transform: translateX(-66.66%);
     }
 }
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 10px;
+    }
+
+    header ul {
+        gap: 10px;
+    }
+
+    .carrossel {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column; /* Empilha os elementos */
+        gap: 15px;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column; /* Menu vertical */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .carrossel {
+        width: 95%;
+        height: 220px;
+    }
+
+    .slides img {
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .carrossel {
+        height: 180px;
+    }
+
+    header ul {
+        font-size: 14px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
